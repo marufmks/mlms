@@ -1,0 +1,19 @@
+{
+  "name": "mlms/mlms",
+  "description": "Wordpress Plugin boilerplate",
+  "autoload": {
+    "psr-4": {
+      "Mlms\\": "includes/",
+      "Mlms\\Database\\": "database/",
+      "Mlms\\Libs\\": "libs/"
+    },
+    "files": [
+      "libs/assets.php",
+      "libs/db.php",
+      "includes/functions.php"
+    ]
+  },
+  "require": {
+    "prappo/wp-eloquent": "^3.0"
+  }
+}
