@@ -7,9 +7,9 @@
  * @since 1.0.0
  */
 
-namespace Mlms\Controllers\Posts;
+namespace EduLMS\Controllers\Posts;
 
-use Mlms\Models\Posts;
+use EduLMS\Models\Posts;
 
 class Actions {
 	public function get_all_posts() {

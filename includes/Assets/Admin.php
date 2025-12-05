@@ -2,35 +2,35 @@
 
 declare(strict_types=1);
 
-namespace Mlms\Assets;
+namespace EduLMS\Assets;
 
-use Mlms\Core\Template;
-use Mlms\Traits\Base;
-use Mlms\Libs\Assets;
+use EduLMS\Core\Template;
+use EduLMS\Traits\Base;
+use EduLMS\Libs\Assets;
 
 /**
  * Class Admin
  *
- * Handles admin functionalities for the Mlms.
+ * Handles admin functionalities for the EduLMS.
  *
- * @package Mlms\Admin
+ * @package EduLMS\Admin
  */
 class Admin {
 
 	use Base;
 
 	/**
-	 * Script handle for Mlms.
+	 * Script handle for EduLMS.
 	 */
-	const HANDLE = 'wordpress-plugin-boilerplate';
+	const HANDLE = 'edu-lms';
 
 	/**
-	 * JS Object name for Mlms.
+	 * JS Object name for EduLMS.
 	 */
 	const OBJ_NAME = 'wordpressPluginBoilerplate';
 
 	/**
-	 * Development script path for Mlms.
+	 * Development script path for EduLMS.
 	 */
 	const DEV_SCRIPT = 'src/admin/main.jsx';
 
@@ -40,7 +40,7 @@ class Admin {
 	 * @var array
 	 */
 	private $allowed_screens = array(
-		'toplevel_page_wordpress-plugin-boilerplate',
+		'toplevel_page_edu-lms',
 	);
 
 	/**
@@ -74,7 +74,7 @@ class Admin {
 
 		if ( in_array( $current_screen, $this->allowed_screens, true ) ) {
 			Assets\enqueue_asset(
-				MLMS_DIR . '/assets/admin/dist',
+				EDU_LMS_DIR . '/assets/admin/dist',
 				self::DEV_SCRIPT,
 				$this->get_config()
 			);

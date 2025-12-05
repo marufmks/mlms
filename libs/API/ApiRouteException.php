@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-namespace Mlms\Libs\API;
+namespace EduLMS\Libs\API;
 
 use Exception;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Mlms\Interfaces;
+namespace EduLMS\Interfaces;
 
 /**
  * Interface Migration
  *
  * Defines the contract for database migration operations.
  *
- * @package Mlms\Interfaces
+ * @package EduLMS\Interfaces
  */
 interface Migration {
 

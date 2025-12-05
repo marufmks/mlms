@@ -1,11 +1,11 @@
 {
-  "name": "mlms/mlms",
+  "name": "edu-lms/edu-lms",
   "description": "Wordpress Plugin boilerplate",
   "autoload": {
     "psr-4": {
-      "Mlms\\": "includes/",
-      "Mlms\\Database\\": "database/",
-      "Mlms\\Libs\\": "libs/"
+      "EduLMS\\": "includes/",
+      "EduLMS\\Database\\": "database/",
+      "EduLMS\\Libs\\": "libs/"
     },
     "files": [
       "libs/assets.php",

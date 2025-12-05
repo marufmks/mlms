@@ -1,23 +1,23 @@
 <?php
 
-namespace Mlms\Core;
+namespace EduLMS\Core;
 
-use Mlms\Traits\Base;
+use EduLMS\Traits\Base;
 
 /**
  * Class Template
  *
- * Represents the Template class for Mlms.
+ * Represents the Template class for EduLMS.
  *
- * @package Mlms\Core
+ * @package EduLMS\Core
  */
 class Template {
 
 	use Base;
 
 	const FRONTEND_TEMPLATE      = 'frontend-template.php';
-	const FRONTEND_TEMPLATE_NAME = 'Mlms';
-	const FRONTEND_TEMPLATE_SLUG = 'wordpress-plugin-boilerplate';
+	const FRONTEND_TEMPLATE_NAME = 'EduLMS';
+	const FRONTEND_TEMPLATE_SLUG = 'edu-lms';
 
 	/**
 	 * Initialize the class.
@@ -48,7 +48,7 @@ class Template {
 	 */
 	public function load_custom_template( $template ) {
 		if ( get_page_template_slug() === self::FRONTEND_TEMPLATE ) {
-			$template_file_dir = MLMS_DIR . 'views/templates/' . self::FRONTEND_TEMPLATE;
+			$template_file_dir = EDU_LMS_DIR . 'views/templates/' . self::FRONTEND_TEMPLATE;
 
 			if ( file_exists( $template_file_dir ) ) {
 				return $template_file_dir;

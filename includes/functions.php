@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
  * @param string $page_template_file_name The filename of the page template.
  * @return void
  */
-function mlms_install_page( $page_title, $page_name, $page_template_file_name ) {
+function edu_lms_install_page( $page_title, $page_name, $page_template_file_name ) {
 	// Check if a page with the specified name does not exist.
 	if ( ! get_page_by_path( $page_name ) ) {
 		$args = array(
@@ -42,7 +42,7 @@ function mlms_install_page( $page_title, $page_name, $page_template_file_name ) 
  *
  * @since 1.0.0
  */
-function mlms_get_config( $config_file_name ) {
+function edu_lms_get_config( $config_file_name ) {
 	$config_file_path = __DIR__ . '/../config/' . $config_file_name . '.php';
 	if ( file_exists( $config_file_path ) ) {
 		return require $config_file_path;

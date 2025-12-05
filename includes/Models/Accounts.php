@@ -2,22 +2,22 @@
 /**
  * Class Accounts
  *
- * Represents the Accounts model for Mlms.
+ * Represents the Accounts model for EduLMS.
  *
- * @package Mlms\Models
+ * @package EduLMS\Models
  * @since 1.0.0
  */
 
-namespace Mlms\Models;
+namespace EduLMS\Models;
 
 use Prappo\WpEloquent\Database\Eloquent\Model;
 
 /**
  * Class Accounts
  *
- * Represents the Accounts model for Mlms.
+ * Represents the Accounts model for EduLMS.
  *
- * @package Mlms\Models
+ * @package EduLMS\Models
  */
 class Accounts extends Model {
 

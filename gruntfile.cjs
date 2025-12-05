@@ -97,7 +97,7 @@ grunt.initConfig({
     pkg,
     move: {
         rename_plugin_file: {
-          src: 'wordpress-plugin-boilerplate.php',
+          src: 'edu-lms.php',
           dest: config.plugin_file_name
         }
       },
@@ -133,7 +133,7 @@ grunt.initConfig({
             recursive: false
         },
         change_plugin_text_domain:{
-            pattern: "Text Domain: wordpress-plugin-boilerplate",
+            pattern: "Text Domain: edu-lms",
             replacement: `Text Domain: ${config.text_domain}`,
             path: config.plugin_file_name,
             recursive: false
@@ -283,13 +283,13 @@ grunt.initConfig({
         main: {
             expand: true,
             src: distFiles,
-            dest: 'release/wordpress-plugin-boilerplate',
+            dest: 'release/edu-lms',
         },
     },
 
      // Task to delete .js.map files
     clean: {
-        mapFiles: ['release/wordpress-plugin-boilerplate/js/dist/assets/**/*.js.map']
+        mapFiles: ['release/edu-lms/js/dist/assets/**/*.js.map']
     },
 
     // Task to compress the release directory into a zip file
@@ -297,29 +297,29 @@ grunt.initConfig({
         main: {
             options: {
                 mode: 'zip',
-                archive: `./release/wordpress-plugin-boilerplate.zip`,
+                archive: `./release/edu-lms.zip`,
             },
             expand: true,
             src: distFiles,
-            dest: '/wordpress-plugin-boilerplate',
+            dest: '/edu-lms',
         },
         version: {
             options: {
                 mode: 'zip',
-                archive: `./release/wordpress-plugin-boilerplate-${pkg.version}.zip`,
+                archive: `./release/edu-lms-${pkg.version}.zip`,
             },
             expand: true,
             src: distFiles,
-            dest: '/wordpress-plugin-boilerplate',
+            dest: '/edu-lms',
         },
         todocs: {
             options: {
                 mode: 'zip',
-                archive: `./documentation/public/plugin/wordpress-plugin-boilerplate.zip`,
+                archive: `./documentation/public/plugin/edu-lms.zip`,
             },
             expand: true,
             src: distFiles,
-            dest: '/wordpress-plugin-boilerplate',
+            dest: '/edu-lms',
         },
     },
 });

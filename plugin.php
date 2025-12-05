@@ -1,21 +1,21 @@
 <?php
-use Mlms\Core\Api;
-use Mlms\Admin\Menu;
-use Mlms\Core\Template;
-use Mlms\Assets\Frontend;
-use Mlms\Assets\Admin;
-use Mlms\Traits\Base;
+use EduLMS\Core\Api;
+use EduLMS\Admin\Menu;
+use EduLMS\Core\Template;
+use EduLMS\Assets\Frontend;
+use EduLMS\Assets\Admin;
+use EduLMS\Traits\Base;
 
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Class Mlms
+ * Class EduLMS
  *
  * The main class for the Coldmailar plugin, responsible for initialization and setup.
  *
  * @since 1.0.0
  */
-final class Mlms {
+final class EduLMS {
 
 	use Base;
 
@@ -26,12 +26,12 @@ final class Mlms {
 	 * @return void
 	 */
 	public function __construct() {
-		define( 'MLMS_VERSION', '1.0.0' );
-		define( 'MLMS_PLUGIN_FILE', __FILE__ );
-		define( 'MLMS_DIR', plugin_dir_path( __FILE__ ) );
-		define( 'MLMS_URL', plugin_dir_url( __FILE__ ) );
-		define( 'MLMS_ASSETS_URL', MLMS_URL . '/assets' );
-		define( 'MLMS_ROUTE_PREFIX', 'wordpress-plugin-boilerplate/v1' );
+		define( 'EDU_LMS_VERSION', '1.0.0' );
+		define( 'EDU_LMS_PLUGIN_FILE', __FILE__ );
+		define( 'EDU_LMS_DIR', plugin_dir_path( __FILE__ ) );
+		define( 'EDU_LMS_URL', plugin_dir_url( __FILE__ ) );
+		define( 'EDU_LMS_ASSETS_URL', EDU_LMS_URL . '/assets' );
+		define( 'EDU_LMS_ROUTE_PREFIX', 'edu-lms/v1' );
 	}
 
 	/**
@@ -71,6 +71,6 @@ final class Mlms {
 	 * @return void
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'wordpress-plugin-boilerplate', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'edu-lms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 }

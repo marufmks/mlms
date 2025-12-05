@@ -1,10 +1,10 @@
 <?php
 
-namespace Mlms\Core;
+namespace EduLMS\Core;
 
-use Mlms\Database\Migrations\Accounts;
-use Mlms\Database\Seeders\Accounts as SeedersAccounts;
-use Mlms\Traits\Base;
+use EduLMS\Database\Migrations\Accounts;
+use EduLMS\Database\Seeders\Accounts as SeedersAccounts;
+use EduLMS\Traits\Base;
 
 /**
  * This class is responsible for the functionality
@@ -33,7 +33,7 @@ class Install {
 	 * @return void
 	 */
 	private function install_pages() {
-		mlms_install_page(
+		edu_lms_install_page(
 			Template::FRONTEND_TEMPLATE_NAME,
 			Template::FRONTEND_TEMPLATE_SLUG,
 			Template::FRONTEND_TEMPLATE

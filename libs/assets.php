@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Mlms\Libs\Assets;
+namespace EduLMS\Libs\Assets;
 
 use Exception;
 use WP_HTML_Tag_Processor;

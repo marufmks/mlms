@@ -6,9 +6,9 @@
  * @since 1.0.0
  */
 
-namespace Mlms\Libs\API;
+namespace EduLMS\Libs\API;
 
-use Mlms\Libs\API\ApiRouteException;
+use EduLMS\Libs\API\ApiRouteException;
 
 /**
  * Class ApiRoute

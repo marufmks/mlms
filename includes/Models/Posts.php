@@ -1,6 +1,6 @@
 <?php
 
-namespace Mlms\Models;
+namespace EduLMS\Models;
 
 use Prappo\WpEloquent\Database\Eloquent\Model;
 

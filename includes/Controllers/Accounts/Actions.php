@@ -1,15 +1,15 @@
 <?php
 
-namespace Mlms\Controllers\Accounts;
+namespace EduLMS\Controllers\Accounts;
 
-use Mlms\Models\Accounts;
+use EduLMS\Models\Accounts;
 
 /**
  * Class Actions
  *
  * Handles account-related actions such as creation, retrieval, deletion, and update.
  *
- * @package Mlms\Controllers\Accounts
+ * @package EduLMS\Controllers\Accounts
  */
 class Actions {
 

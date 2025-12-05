@@ -1,13 +1,13 @@
 <?php
 
-namespace Mlms\Traits;
+namespace EduLMS\Traits;
 
 /**
  * Trait Base
  *
  * Provides a trait with a singleton pattern for obtaining an instance.
  *
- * @package Mlms\Trait
+ * @package EduLMS\Trait
  */
 trait Base {
 

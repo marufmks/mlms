@@ -1,31 +1,31 @@
 <?php
 /**
- * Mlms Routes
+ * EduLMS Routes
  *
- * Defines and registers custom API routes for the Mlms using the Haruncpi\WpApi library.
+ * Defines and registers custom API routes for the EduLMS using the Haruncpi\WpApi library.
  *
- * @package Mlms\Routes
+ * @package EduLMS\Routes
  */
 
-namespace Mlms\Routes;
+namespace EduLMS\Routes;
 
-use Mlms\Libs\API\Route;
+use EduLMS\Libs\API\Route;
 
 Route::prefix(
-	MLMS_ROUTE_PREFIX,
+	EDU_LMS_ROUTE_PREFIX,
 	function ( Route $route ) {
 
 		// Define accounts API routes.
 
-		$route->post( '/accounts/create', '\Mlms\Controllers\Accounts\Actions@create' );
-		$route->get( '/accounts/get', '\Mlms\Controllers\Accounts\Actions@get' );
-		$route->post( '/accounts/delete', '\Mlms\Controllers\Accounts\Actions@delete' );
-		$route->post( '/accounts/update', '\Mlms\Controllers\Accounts\Actions@update' );
+		$route->post( '/accounts/create', '\EduLMS\Controllers\Accounts\Actions@create' );
+		$route->get( '/accounts/get', '\EduLMS\Controllers\Accounts\Actions@get' );
+		$route->post( '/accounts/delete', '\EduLMS\Controllers\Accounts\Actions@delete' );
+		$route->post( '/accounts/update', '\EduLMS\Controllers\Accounts\Actions@update' );
 
 		// Posts routes.
-		$route->get( '/posts/get', '\Mlms\Controllers\Posts\Actions@get_all_posts' );
-		$route->get( '/posts/get/{id}', '\Mlms\Controllers\Posts\Actions@get_post' );
+		$route->get( '/posts/get', '\EduLMS\Controllers\Posts\Actions@get_all_posts' );
+		$route->get( '/posts/get/{id}', '\EduLMS\Controllers\Posts\Actions@get_post' );
 		// Allow hooks to add more custom API routes.
-		do_action( 'mlms_api', $route );
+		do_action( 'edu_lms_api', $route );
 	}
 );

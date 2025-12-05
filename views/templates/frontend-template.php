@@ -4,10 +4,10 @@
  *
  * This file is used to markup the public facing aspects of the plugin.
  *
- * @package Mlms
+ * @package EduLMS
  */
 
-use Mlms\Assets\Frontend;
+use EduLMS\Assets\Frontend;
 
 
 

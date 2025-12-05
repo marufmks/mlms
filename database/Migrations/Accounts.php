@@ -2,14 +2,14 @@
 /**
  * Database configuration using Eloquent ORM.
  *
- * @package Mlms
+ * @package EduLMS
  * @subpackage Database
  * @since 1.0.0
  */
 
-namespace Mlms\Database\Migrations;
+namespace EduLMS\Database\Migrations;
 
-use Mlms\Interfaces\Migration;
+use EduLMS\Interfaces\Migration;
 use Prappo\WpEloquent\Database\Capsule\Manager as Capsule;
 use Prappo\WpEloquent\Database\Schema\Blueprint;
 use Prappo\WpEloquent\Support\Facades\Schema;
@@ -19,7 +19,7 @@ use Prappo\WpEloquent\Support\Facades\Schema;
  *
  * Represents the migration for creating the 'accounts' table.
  *
- * @package Mlms\Database\Migrations
+ * @package EduLMS\Database\Migrations
  */
 class Accounts implements Migration {
 

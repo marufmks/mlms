@@ -2,21 +2,21 @@
 /**
  * Class Users
  *
- * Represents the Users model for Mlms.
+ * Represents the Users model for EduLMS.
  *
- * @package Mlms\Models
+ * @package EduLMS\Models
  */
 
-namespace Mlms\Models;
+namespace EduLMS\Models;
 
 use Prappo\WpEloquent\Database\Eloquent\Model;
 
 /**
  * Class Users
  *
- * Represents the Users model for Mlms.
+ * Represents the Users model for EduLMS.
  *
- * @package Mlms\Models
+ * @package EduLMS\Models
  */
 class Users extends Model {
 

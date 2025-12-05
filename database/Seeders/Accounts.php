@@ -2,11 +2,11 @@
 /**
  * Database configuration using Eloquent ORM.
  *
- * @package Mlms
+ * @package EduLMS
  * @subpackage Database
  */
 
-namespace Mlms\Database\Seeders;
+namespace EduLMS\Database\Seeders;
 
 use Prappo\WpEloquent\Database\Capsule\Manager as Capsule;
 /**
@@ -14,7 +14,7 @@ use Prappo\WpEloquent\Database\Capsule\Manager as Capsule;
  *
  * Represents the seeder for the 'accounts' table.
  *
- * @package Mlms\Database\Seeders
+ * @package EduLMS\Database\Seeders
  * @since 1.0.0
  */
 class Accounts {
@@ -56,8 +56,8 @@ class Accounts {
 		);
 
 		foreach ( $accounts as $account ) {
-			if ( ! \Mlms\Models\Accounts::where( 'user_id', $account['user_id'] )->exists() ) {
-				\Mlms\Models\Accounts::create( $account );
+			if ( ! \EduLMS\Models\Accounts::where( 'user_id', $account['user_id'] )->exists() ) {
+				\EduLMS\Models\Accounts::create( $account );
 			}
 		}
 	}

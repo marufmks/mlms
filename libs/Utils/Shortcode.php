@@ -1,5 +1,5 @@
 <?php
-namespace Mlms\Libs\Utils;
+namespace EduLMS\Libs\Utils;
 
 /**
  * Shortcode Class for WordPress

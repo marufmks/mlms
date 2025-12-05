@@ -1,5 +1,5 @@
 <?php
-namespace Mlms\Libs\Utils;
+namespace EduLMS\Libs\Utils;
 
 /**
  * Custom Post Type

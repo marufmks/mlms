@@ -21,5 +21,5 @@
  */
  
 /* eslint-disable no-console */
-console.log("Hello World! from wordpress-plugin-boilerplate");
+console.log("Hello World! from edu-lms");
 /* eslint-enable no-console */

@@ -1,29 +1,29 @@
 <?php
 
-namespace Mlms\Core;
+namespace EduLMS\Core;
 
-use Mlms\Traits\Base;
-use Mlms\Libs\API\Config;
+use EduLMS\Traits\Base;
+use EduLMS\Libs\API\Config;
 
 /**
  * Class API
  *
- * Initializes and configures the API for the Mlms.
+ * Initializes and configures the API for the EduLMS.
  *
- * @package Mlms\Core
+ * @package EduLMS\Core
  */
 class API {
 
 	use Base;
 
 	/**
-	 * Initializes the API for the Mlms.
+	 * Initializes the API for the EduLMS.
 	 *
 	 * @return void
 	 */
 	public function init() {
-		Config::set_route_file( MLMS_DIR . '/includes/Routes/Api.php' )
-			->set_namespace( 'Mlms\Api' )
+		Config::set_route_file( EDU_LMS_DIR . '/includes/Routes/Api.php' )
+			->set_namespace( 'EduLMS\Api' )
 			->init();
 	}
 }

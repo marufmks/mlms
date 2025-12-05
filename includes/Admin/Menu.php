@@ -1,15 +1,15 @@
 <?php
 
-namespace Mlms\Admin;
+namespace EduLMS\Admin;
 
-use Mlms\Traits\Base;
+use EduLMS\Traits\Base;
 
 /**
  * Class Menu
  *
- * Represents the admin menu management for the Mlms plugin.
+ * Represents the admin menu management for the EduLMS plugin.
  *
- * @package Mlms\Admin
+ * @package EduLMS\Admin
  */
 class Menu {
 
@@ -20,7 +20,7 @@ class Menu {
 	 *
 	 * @var string
 	 */
-	private $parent_slug = 'wordpress-plugin-boilerplate';
+	private $parent_slug = 'edu-lms';
 
 	/**
 	 * Initializes the admin menu.
@@ -40,8 +40,8 @@ class Menu {
 	public function menu() {
 
 		add_menu_page(
-			__( 'MyPlugin', 'wordpress-plugin-boilerplate' ),
-			__( 'MyPlugin', 'wordpress-plugin-boilerplate' ),
+			__( 'Edu LMS', 'edu-lms' ),
+			__( 'Edu LMS', 'edu-lms' ),
 			'manage_options',
 			$this->parent_slug,
 			array( $this, 'admin_page' ),
@@ -60,16 +60,16 @@ class Menu {
 		$submenu_pages = array(
 			array(
 				'parent_slug' => $this->parent_slug,
-				'page_title'  => __( 'Dashboard', 'wordpress-plugin-boilerplate' ),
-				'menu_title'  => __( 'Dashboard', 'wordpress-plugin-boilerplate' ),
+				'page_title'  => __( 'Dashboard', 'edu-lms' ),
+				'menu_title'  => __( 'Dashboard', 'edu-lms' ),
 				'capability'  => 'manage_options',
 				'menu_slug'   => $this->parent_slug,
 				'function'    => array( $this, 'admin_page' ), // Uses the same callback function as parent menu.
 			),
 			array(
 				'parent_slug' => $this->parent_slug,
-				'page_title'  => __( 'Inbox', 'wordpress-plugin-boilerplate' ),
-				'menu_title'  => __( 'Inbox', 'wordpress-plugin-boilerplate' ),
+				'page_title'  => __( 'Inbox', 'edu-lms' ),
+				'menu_title'  => __( 'Inbox', 'edu-lms' ),
 				'capability'  => 'manage_options',
 				'menu_slug'   => $plugin_url . '/#/inbox',
 				'function'    => null, // Uses the same callback function as parent menu.
@@ -77,8 +77,8 @@ class Menu {
 
 			array(
 				'parent_slug' => $this->parent_slug,
-				'page_title'  => __( 'Chart', 'wordpress-plugin-boilerplate' ),
-				'menu_title'  => __( 'Chart', 'wordpress-plugin-boilerplate' ),
+				'page_title'  => __( 'Chart', 'edu-lms' ),
+				'menu_title'  => __( 'Chart', 'edu-lms' ),
 				'capability'  => 'manage_options',
 				'menu_slug'   => $plugin_url . '/#/charts',
 				'function'    => null, // Uses the same callback function as parent menu.
@@ -86,15 +86,15 @@ class Menu {
 
 			array(
 				'parent_slug' => $this->parent_slug,
-				'page_title'  => __( 'Settings', 'wordpress-plugin-boilerplate' ),
-				'menu_title'  => __( 'Settings', 'wordpress-plugin-boilerplate' ),
+				'page_title'  => __( 'Settings', 'edu-lms' ),
+				'menu_title'  => __( 'Settings', 'edu-lms' ),
 				'capability'  => 'manage_options',
 				'menu_slug'   => $plugin_url . '/#/settings',
 				'function'    => null, // Uses the same callback function as parent menu.
 			),
 		);
 
-		$plugin_submenu_pages = apply_filters( 'mlms_submenu_pages', $submenu_pages );
+		$plugin_submenu_pages = apply_filters( 'edu_lms_submenu_pages', $submenu_pages );
 
 		foreach ( $plugin_submenu_pages as $submenu ) {
 

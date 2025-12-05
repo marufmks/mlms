@@ -1,13 +1,13 @@
 <?php
 
-namespace Mlms\Controllers\Accounts;
+namespace EduLMS\Controllers\Accounts;
 
 /**
  * Class Messages
  *
  * Provides static methods to generate standardized messages related to accounts actions.
  *
- * @package Mlms\Controllers\Accounts
+ * @package EduLMS\Controllers\Accounts
  */
 class Messages {
 
